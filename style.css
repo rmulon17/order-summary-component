@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+
+    font-size: 62.5%;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-color: var(--pale-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hero {
+    background-color: white;
+    text-align: center;
+    width: 40.5rem;
+    border-radius: 1.8rem;
+    padding-bottom: 4rem;
+}
+
+.hero-banner {
+    margin-bottom: 2.5rem;
+}
+.hero-banner img {
+    width: 100%;
+    border-top-left-radius: 1.8rem;
+    border-top-right-radius: 1.8rem;
+}
+
+.content, .plan-option {
+    width: 30rem;
+    margin-inline: auto;
+    margin-bottom: 2.1rem;
+}
+
+.content {
+    /*width: 30rem;*/
+}
+.content h1{
+    font-size: 2rem;
+    margin-bottom: 1.3rem;
+}
+.content p {
+    font-size:1.4rem
+}
+
+.content p, .light-text, .cancel-order {
+    color: var(--desaturated-blue);
+}
+
+/* PLAN OPTION SECTION */
+.plan-option {
+    background-color: var(--very-pale-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1.5rem;
+    padding-block: 1.5rem;
+    font-size: 1.2rem;
+
+    border-radius: 1rem;
+}
+.flex-col {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.flex-col p, a {
+    font-weight: 900;
+}
+.flex-col p {
+    line-height: 1.8rem;
+}
+
+.flex-col .light-text {
+    display: block;
+}
+.change-col a {
+    color: var(--bright-blue);
+}
+
+/* BUTTON */
+button {
+    background-color: var(--bright-blue);
+    width: 30rem;
+    color: white;
+    font-weight: bold;
+    padding-block: 1.2rem;
+    margin-bottom: 2.1rem;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.hero {
+    border-radius: 1.8rem;
+}
+
+/* CANCEL ORDER */
+.cancel-order {
+    text-decoration: none;
+}
+
+/* ACTIVE STATES */
+.change:active {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+button:active {
+    background-color: hsl(245, 75%, 80%);
+}
+
+.cancel-order:active {
+    color: black;
+}
